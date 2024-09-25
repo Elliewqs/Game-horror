@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>INVESTIGADOR SOMBRIO</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="INVESTIGAMENTO SOMBRIO (1).png" alt="">
+            <p>Você é um investigador, indo resolver um caso sombrio e espiritual em uma floresta isolada.</p>
+            <button class="btn-proximo" data-proximo="1">Jogar</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="cenario-passo0.png" alt="">
+            <p> Você entra na floresta sombria, mas logo de cara você encontra dois caminho diferente, em um deles vc enxerga uma cabana velha, mas vc precisa seguir um caminho indicado do seu superior</p>
+            <button class="btn-proximo" data-proximo="2">Seguir o caminho indicado no localizador</button>
+            <button class="btn-proximo" data-proximo="3">Explorar a cabana velha</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+
+            <p>Você encontra alguns objetos estranho no meio do caminho e começa a sentir vultos.</p>
+            <button class="btn-proximo" data-proximo="4">Investigar esses objetos</button>
+            <button class="btn-proximo" data-proximo="5">Não mexer no objeto e seguir o caminho.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="Caderno Estranho.jpeg" alt="">
+            <p>Dentro dessa cabana, você encontra um caderno estranho, cheio de rituais sobre invocação com chão sujo de sangue</p>
+            <button class="btn-proximo" data-proximo="6">Testar o ritual</button>
+            <button class="btn-proximo" data-proximo="7">Deixar o diario e sair do cabana.</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="Sanidade 2.webp" alt="">
+            <p>Assim que vc pega o objeto, seu corpo começa a pesar, sua sanidade abaixa e você ouve barulhos estranhos de agonização</p>
+            <button class="btn-proximo" data-proximo="8">FUGIR</button>
+            <button class="btn-proximo" data-proximo="9">Segurar a pressão</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você ignora totalmente o objeto estranho, mas começa a ver muitos vultos no meio da floresta, até que sente como se tivesse alguem correndo atrás de você </p>
+            <button class="btn-proximo" data-proximo="10">Tentar usar sua cruz</button>
+            <button class="btn-proximo" data-proximo="11">Correr e se esconder</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="Espirito naligno.jpeg" alt="">
+            <p>Por sorte, tudo que precisava tinha na cabana, você faz o ritual e invoca um espirito maligno. Ele vai em sua direção!!!!!</p>
+            <button class="btn-proximo" data-proximo="12">Tentar conversar com o espirito</button>
+            <button class="btn-proximo" data-proximo="13">Fugir da cabana imediatamente</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você vai para a saida, mas algo faz a porta se fechar sozinha e te trancando</p>
+            <button class="btn-proximo" data-proximo="14">Achar outra saida</button>
+            <button class="btn-proximo" data-proximo="15">Se defender</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="Sanidade.webp" alt="">
+            <p>Você corre o mais rapido possivel, sob efeitos da baixa sanidade que te faz pisar em uma armadilha de urso, assim te deixando imovél.</p>
+            <button class="btn-proximo" data-proximo="0">Você morreu! Voltar ao inicio</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você segura a pressão e tenta se acalmar ao maximo, se recuperando mentalmente. Mesmo enxergando diversas assombrações, você tenta achar o caminho para sair da floresta. </p>
+            <button class="btn-proximo" data-proximo="11">TENTAR SAIR DA FLORESTA!!</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você se vira rapidamente e aponta sua cruz... OPS! era um gato</p>
+            <button class="btn-proximo" data-proximo="16"> se aliviar </button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="Mulher estranha.jpeg" alt="">
+            <p> Você corre muitoo e procura um lugar pra se esconder!! até que encontra uma pessoa caminhando na floresta... é uma mulher que parece precisar de ajuda</p>
+            <button class="btn-proximo" data-proximo="17"> Ignorar </button>
+            <button class="btn-proximo" data-proximo="18"> Tentar ajuda-lá</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>O espirito se aproxima de você lentamente, Você faz algumas perguntas mas ele só responde com ofegadas.
+            </p>
+            <button class="btn-proximo" data-proximo="19">Desistir e ir embora</button>
+            <button class="btn-proximo" data-proximo="20">Insistir</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>Você foge da cabana sem provas e com a missão falhada.</p>
+            <button class="btn-proximo" data-proximo="0">Você falhou!! Voltar para o inicio</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>Você procura outra saida, as o espirito maligno foi mais rapido, que te joga em uma parede com pregos.</p>
+            <button class="btn-proximo" data-proximo="0">Morreu para os pregos!</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>Você procura algo para se defender, até que encontra uma cruz na parede e o arranca. 
+                Para não ser atacado, fica com a cruz entre seus peitos e tenta arranjar algo para arrombar a porta,
+                até que encontra um pé de cabra proximo a garagem da cabana.
+            </p>
+            <button class="btn-proximo" data-proximo="21"> Arrombar a porta </button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>Após se acalmar, você decide encontrar a saida da floresta e voltar com uma equipe de exorcista par examinar os acontecimentos. A missão pedente, ainda há muitos mistérios para investigar.  </p>
+            <button class="btn-proximo" data-proximo="0"> Reiniciar </button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <img src="Mulher estranha p2.jpeg" alt="">
+            <p>Você dá as costas para a mulher!!!!! até que ela desaparece de vez e aparece na sua frente, ela te assusta e você desmaia</p>
+            <button class="btn-proximo" data-proximo="0">Perdeu!! </button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>Você tenta ajudar, ela estava desesperada perdida. Apesar de você suspeitar se era realmente uma
+                mulher viva, você tenta acalmá-la. Você pisca e ela some derrepente, até que você percebe que lá estava um caminho para a 
+                saida da floresta.
+            </p>
+            <button class="btn-proximo" data-proximo="0">Você consegue sair vivo</button>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>Você invoca o espirito atoa, e com isso ele te possui e toma conta do seu corpo de raiva.</p>
+            <button class="btn-proximo" data-proximo="0">Morre possuido</button>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <p>Você insiste uma resposta, o espirito maligno continua parado mas por coincidencia, um quadro 
+                cai do seu lado... na foto do quadro tem 3 pessoas, dois casal com uma criança. Percebe-se que o espirito está
+                esperando você dizer algo sobre, então o que você diz. (se responder errado, você morre!)
+            </p>
+            <button class="btn-proximo" data-proximo="22"> (empatia)</button>
+            <button class="btn-proximo" data-proximo="23"> (lógico) </button>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <img src="FIM DE JOGO!.png" alt="">
+            <p>A porta se arromba, mas a cabana se range assim que você sai, parece que você nunca mais vai ser
+                bem vindo na cabana novamente.
+            </p>
+            <button class="btn-proximo" data-proximo="0">Final ruim</button>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <img src="Designer (2).jpeg" alt="">
+            <p>O espirito se familiariza com você, ele parece ter se sentido amado após ter perdido sua familia toda em um acidente planejado
+                 e a propria vida com suicidio. Ele apenas desaparecedo deixando o quadro em suas mãos.
+            </p>
+            <button class="btn-proximo" data-proximo="0">Final bom</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
